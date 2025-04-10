@@ -1,0 +1,8 @@
+
+1、Dataset  https://drive.google.com/drive/my-drive?dmr=1&ec=wgc-drive-hero-goto
+2、For KIR dataset：
+   dat file reading format:
+Binary file, starting from 264 bytes, with a total length of 65000 bytes, divided into 13 groups, 
+corresponding to channels AG11, AG12, AG13, AG21, AG22, AG23, AG31, AG32, AG33, AC1, AC2, AC3, AC4.
+5000 digits in each group, with individual digits formatted in SGL single precision. 
+The dt value converted to waveform is 0.00002.
