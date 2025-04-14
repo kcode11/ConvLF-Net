@@ -114,10 +114,10 @@ class TransformerEncoderModule(nn.Module):
         return x
 
 
-class Model_linear(nn.Module):
+class ConvLF_Net(nn.Module):
     def __init__(self, channel_in,num_classes,num_filters=16, d_model=256, nhead=8, num_encoder_layers=2, dim_feedforward=1024,
                  dropout=0.2):
-        super(Model_linear, self).__init__()
+        super(ConvLF_Net, self).__init__()
         # Multi-scale CNN branches
         self.cnn1 = nn.Sequential(
             nn.Conv1d(channel_in, 64, kernel_size=5, padding=2),
