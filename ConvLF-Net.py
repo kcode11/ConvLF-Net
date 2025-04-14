@@ -115,8 +115,8 @@ class TransformerEncoderModule(nn.Module):
 
 
 class Model_linear(nn.Module):
-    def __init__(self, channel_in=13, num_filters=16, d_model=256, nhead=8, num_encoder_layers=2, dim_feedforward=1024,
-                 dropout=0.2, num_classes=6):
+    def __init__(self, channel_in=13,num_classes,num_filters=16, d_model=256, nhead=8, num_encoder_layers=2, dim_feedforward=1024,
+                 dropout=0.2):
         super(Model_linear, self).__init__()
         # Multi-scale CNN branches
         self.cnn1 = nn.Sequential(
